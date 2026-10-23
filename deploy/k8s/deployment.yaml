@@ -1,0 +1,60 @@
+# Minimal Kubernetes deployment (works on EKS, kind or minikube).
+#   docker build -t drivememory:0.1.0 .
+#   kubectl apply -f deploy/k8s/deployment.yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: drivememory-data
+spec:
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: drivememory
+  labels: { app: drivememory }
+spec:
+  replicas: 1  # SQLite is single-writer; use Postgres/DynamoDB before scaling out
+  selector:
+    matchLabels: { app: drivememory }
+  template:
+    metadata:
+      labels: { app: drivememory }
+    spec:
+      containers:
+        - name: api
+          image: drivememory:0.1.0
+          ports:
+            - containerPort: 8000
+          env:
+            - name: DRIVEMEMORY_DB
+              value: /data/drivememory.db
+          readinessProbe:
+            httpGet: { path: /health, port: 8000 }
+            initialDelaySeconds: 3
+          livenessProbe:
+            httpGet: { path: /health, port: 8000 }
+            periodSeconds: 20
+          resources:
+            requests: { cpu: 100m, memory: 256Mi }
+            limits: { cpu: 500m, memory: 512Mi }
+          volumeMounts:
+            - name: data
+              mountPath: /data
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: drivememory-data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: drivememory
+spec:
+  selector: { app: drivememory }
+  ports:
+    - port: 80
+      targetPort: 8000

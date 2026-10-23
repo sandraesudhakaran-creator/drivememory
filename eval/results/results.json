@@ -1,0 +1,823 @@
+{
+  "weeks": 8,
+  "seeds": 3,
+  "personas": {
+    "anna": {
+      "name": "Anna (commuter, cautious in rain)",
+      "baseline": [
+        {
+          "week": 1,
+          "trips": 15.667,
+          "recall": 0.692,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.706,
+          "unplanned_takeovers": 2
+        },
+        {
+          "week": 2,
+          "trips": 15.333,
+          "recall": 0.82,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.764,
+          "unplanned_takeovers": 3.667
+        },
+        {
+          "week": 3,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.756,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 4,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.83,
+          "unplanned_takeovers": 2
+        },
+        {
+          "week": 5,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.694,
+          "unplanned_takeovers": 1.333
+        },
+        {
+          "week": 6,
+          "trips": 15.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.548,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 7,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.841,
+          "unplanned_takeovers": 1.667
+        },
+        {
+          "week": 8,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.552,
+          "unplanned_takeovers": 1.333
+        }
+      ],
+      "assisted": [
+        {
+          "week": 1,
+          "trips": 15.667,
+          "recall": 0.692,
+          "precision": 1.0,
+          "adjustments_per_trip": 1.857,
+          "unplanned_takeovers": 2
+        },
+        {
+          "week": 2,
+          "trips": 15.333,
+          "recall": 0.82,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.308,
+          "unplanned_takeovers": 1
+        },
+        {
+          "week": 3,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.311,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 4,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.174,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 5,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.244,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 6,
+          "trips": 15.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.286,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 7,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.178,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 8,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.314,
+          "unplanned_takeovers": 0
+        }
+      ]
+    },
+    "ben": {
+      "name": "Ben (sporty, trusts autonomy)",
+      "baseline": [
+        {
+          "week": 1,
+          "trips": 16,
+          "recall": 0.643,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.106,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 2,
+          "trips": 16,
+          "recall": 0.738,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.145,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 3,
+          "trips": 15.667,
+          "recall": 0.953,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.129,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 4,
+          "trips": 16,
+          "recall": 0.976,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.104,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 5,
+          "trips": 16.333,
+          "recall": 0.976,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.162,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 6,
+          "trips": 16.667,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.201,
+          "unplanned_takeovers": 0.667
+        },
+        {
+          "week": 7,
+          "trips": 15.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.174,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 8,
+          "trips": 15.667,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.168,
+          "unplanned_takeovers": 0.333
+        }
+      ],
+      "assisted": [
+        {
+          "week": 1,
+          "trips": 16,
+          "recall": 0.643,
+          "precision": 1.0,
+          "adjustments_per_trip": 1.503,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 2,
+          "trips": 16,
+          "recall": 0.738,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.288,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 3,
+          "trips": 15.667,
+          "recall": 0.953,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.383,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 4,
+          "trips": 16,
+          "recall": 0.976,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.271,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 5,
+          "trips": 16.333,
+          "recall": 0.976,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.218,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 6,
+          "trips": 16.667,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.376,
+          "unplanned_takeovers": 0.667
+        },
+        {
+          "week": 7,
+          "trips": 15.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.346,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 8,
+          "trips": 15.667,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.171,
+          "unplanned_takeovers": 0.333
+        }
+      ]
+    },
+    "chen": {
+      "name": "Chen (no autonomy, likes it warm)",
+      "baseline": [
+        {
+          "week": 1,
+          "trips": 13,
+          "recall": 0.852,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.385,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 2,
+          "trips": 13,
+          "recall": 0.926,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.212,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 3,
+          "trips": 13.333,
+          "recall": 0.963,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.447,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 4,
+          "trips": 12,
+          "recall": 0.963,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.25,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 5,
+          "trips": 13,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.205,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 6,
+          "trips": 13,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.357,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 7,
+          "trips": 13.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.447,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 8,
+          "trips": 13.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.353,
+          "unplanned_takeovers": 0
+        }
+      ],
+      "assisted": [
+        {
+          "week": 1,
+          "trips": 13,
+          "recall": 0.852,
+          "precision": 1.0,
+          "adjustments_per_trip": 1.897,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 2,
+          "trips": 13,
+          "recall": 0.926,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.456,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 3,
+          "trips": 13.333,
+          "recall": 0.963,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.379,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 4,
+          "trips": 12,
+          "recall": 0.963,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.25,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 5,
+          "trips": 13,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.308,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 6,
+          "trips": 13,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.386,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 7,
+          "trips": 13.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.302,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 8,
+          "trips": 13.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.255,
+          "unplanned_takeovers": 0
+        }
+      ]
+    },
+    "dara": {
+      "name": "Dara (noisy shared car)",
+      "baseline": [
+        {
+          "week": 1,
+          "trips": 13.667,
+          "recall": 0.75,
+          "precision": 1.0,
+          "adjustments_per_trip": 4.071,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 2,
+          "trips": 14,
+          "recall": 0.805,
+          "precision": 1.0,
+          "adjustments_per_trip": 4.017,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 3,
+          "trips": 14,
+          "recall": 0.972,
+          "precision": 1.0,
+          "adjustments_per_trip": 4.095,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 4,
+          "trips": 14.667,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.94,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 5,
+          "trips": 14.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.875,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 6,
+          "trips": 13.667,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.954,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 7,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.956,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 8,
+          "trips": 14.667,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.951,
+          "unplanned_takeovers": 0
+        }
+      ],
+      "assisted": [
+        {
+          "week": 1,
+          "trips": 13.667,
+          "recall": 0.75,
+          "precision": 1.0,
+          "adjustments_per_trip": 2.425,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 2,
+          "trips": 14,
+          "recall": 0.805,
+          "precision": 1.0,
+          "adjustments_per_trip": 1.157,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 3,
+          "trips": 14,
+          "recall": 0.972,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.841,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 4,
+          "trips": 14.667,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.86,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 5,
+          "trips": 14.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.933,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 6,
+          "trips": 13.667,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.764,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 7,
+          "trips": 15,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 1.133,
+          "unplanned_takeovers": 0.333
+        },
+        {
+          "week": 8,
+          "trips": 14.667,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.881,
+          "unplanned_takeovers": 0
+        }
+      ]
+    },
+    "emil": {
+      "name": "Emil (preference drift at week 4)",
+      "baseline": [
+        {
+          "week": 1,
+          "trips": 13.667,
+          "recall": 0.722,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.028,
+          "unplanned_takeovers": 1
+        },
+        {
+          "week": 2,
+          "trips": 14,
+          "recall": 0.805,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.238,
+          "unplanned_takeovers": 2.333
+        },
+        {
+          "week": 3,
+          "trips": 14.667,
+          "recall": 0.972,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.088,
+          "unplanned_takeovers": 3
+        },
+        {
+          "week": 4,
+          "trips": 14,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 3.071,
+          "unplanned_takeovers": 2.333
+        },
+        {
+          "week": 5,
+          "trips": 14.333,
+          "recall": 0.917,
+          "precision": 0.972,
+          "adjustments_per_trip": 3.275,
+          "unplanned_takeovers": 2.333
+        },
+        {
+          "week": 6,
+          "trips": 14.333,
+          "recall": 0.945,
+          "precision": 1.0,
+          "adjustments_per_trip": 2.929,
+          "unplanned_takeovers": 2
+        },
+        {
+          "week": 7,
+          "trips": 14.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 2.906,
+          "unplanned_takeovers": 2
+        },
+        {
+          "week": 8,
+          "trips": 14.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 2.897,
+          "unplanned_takeovers": 2
+        }
+      ],
+      "assisted": [
+        {
+          "week": 1,
+          "trips": 13.667,
+          "recall": 0.722,
+          "precision": 1.0,
+          "adjustments_per_trip": 1.608,
+          "unplanned_takeovers": 1
+        },
+        {
+          "week": 2,
+          "trips": 14,
+          "recall": 0.805,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.334,
+          "unplanned_takeovers": 1.333
+        },
+        {
+          "week": 3,
+          "trips": 14.667,
+          "recall": 0.972,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.364,
+          "unplanned_takeovers": 0.667
+        },
+        {
+          "week": 4,
+          "trips": 14,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.238,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 5,
+          "trips": 14.333,
+          "recall": 0.917,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.995,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 6,
+          "trips": 14.333,
+          "recall": 0.972,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.627,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 7,
+          "trips": 14.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.416,
+          "unplanned_takeovers": 0
+        },
+        {
+          "week": 8,
+          "trips": 14.333,
+          "recall": 1.0,
+          "precision": 1.0,
+          "adjustments_per_trip": 0.321,
+          "unplanned_takeovers": 0
+        }
+      ],
+      "drift_adaptation_weeks": 3
+    }
+  },
+  "mean": {
+    "baseline": [
+      {
+        "week": 1,
+        "trips": 14.4,
+        "recall": 0.732,
+        "precision": 1.0,
+        "adjustments_per_trip": 3.459,
+        "unplanned_takeovers": 0.667
+      },
+      {
+        "week": 2,
+        "trips": 14.467,
+        "recall": 0.819,
+        "precision": 1.0,
+        "adjustments_per_trip": 3.475,
+        "unplanned_takeovers": 1.267
+      },
+      {
+        "week": 3,
+        "trips": 14.533,
+        "recall": 0.972,
+        "precision": 1.0,
+        "adjustments_per_trip": 3.503,
+        "unplanned_takeovers": 0.733
+      },
+      {
+        "week": 4,
+        "trips": 14.333,
+        "recall": 0.988,
+        "precision": 1.0,
+        "adjustments_per_trip": 3.439,
+        "unplanned_takeovers": 0.867
+      },
+      {
+        "week": 5,
+        "trips": 14.6,
+        "recall": 0.979,
+        "precision": 0.994,
+        "adjustments_per_trip": 3.442,
+        "unplanned_takeovers": 0.8
+      },
+      {
+        "week": 6,
+        "trips": 14.6,
+        "recall": 0.989,
+        "precision": 1.0,
+        "adjustments_per_trip": 3.398,
+        "unplanned_takeovers": 0.667
+      },
+      {
+        "week": 7,
+        "trips": 14.6,
+        "recall": 1.0,
+        "precision": 1.0,
+        "adjustments_per_trip": 3.465,
+        "unplanned_takeovers": 0.8
+      },
+      {
+        "week": 8,
+        "trips": 14.6,
+        "recall": 1.0,
+        "precision": 1.0,
+        "adjustments_per_trip": 3.384,
+        "unplanned_takeovers": 0.733
+      }
+    ],
+    "assisted": [
+      {
+        "week": 1,
+        "trips": 14.4,
+        "recall": 0.732,
+        "precision": 1.0,
+        "adjustments_per_trip": 1.858,
+        "unplanned_takeovers": 0.667
+      },
+      {
+        "week": 2,
+        "trips": 14.467,
+        "recall": 0.819,
+        "precision": 1.0,
+        "adjustments_per_trip": 0.509,
+        "unplanned_takeovers": 0.533
+      },
+      {
+        "week": 3,
+        "trips": 14.533,
+        "recall": 0.972,
+        "precision": 1.0,
+        "adjustments_per_trip": 0.456,
+        "unplanned_takeovers": 0.2
+      },
+      {
+        "week": 4,
+        "trips": 14.333,
+        "recall": 0.988,
+        "precision": 1.0,
+        "adjustments_per_trip": 0.359,
+        "unplanned_takeovers": 0
+      },
+      {
+        "week": 5,
+        "trips": 14.6,
+        "recall": 0.979,
+        "precision": 1.0,
+        "adjustments_per_trip": 0.54,
+        "unplanned_takeovers": 0.067
+      },
+      {
+        "week": 6,
+        "trips": 14.6,
+        "recall": 0.994,
+        "precision": 1.0,
+        "adjustments_per_trip": 0.488,
+        "unplanned_takeovers": 0.2
+      },
+      {
+        "week": 7,
+        "trips": 14.6,
+        "recall": 1.0,
+        "precision": 1.0,
+        "adjustments_per_trip": 0.475,
+        "unplanned_takeovers": 0.067
+      },
+      {
+        "week": 8,
+        "trips": 14.6,
+        "recall": 1.0,
+        "precision": 1.0,
+        "adjustments_per_trip": 0.388,
+        "unplanned_takeovers": 0.067
+      }
+    ]
+  },
+  "headline": {
+    "final_recall": 1.0,
+    "final_precision": 1.0,
+    "adjustment_reduction": 0.885,
+    "unplanned_takeover_reduction": 0.725,
+    "weeks_to_80pct_recall": 2
+  }
+}

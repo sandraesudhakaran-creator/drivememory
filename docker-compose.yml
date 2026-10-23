@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DRIVEMEMORY_DB=/data/drivememory.db
+      # - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}   # optional LLM phrasing
+    volumes:
+      - drivememory-data:/data
+
+volumes:
+  drivememory-data:

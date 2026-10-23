@@ -1,0 +1,67 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  DriveMemory API on AWS Lambda + API Gateway (HTTP API), with a least-privilege
+  IAM role. Deploy with:  sam build -t deploy/aws/template.yaml && sam deploy --guided
+
+Parameters:
+  AnthropicApiKeySecretArn:
+    Type: String
+    Default: ""
+    Description: Optional Secrets Manager ARN holding ANTHROPIC_API_KEY for LLM-phrased replies.
+
+Conditions:
+  UseLLM: !Not [!Equals [!Ref AnthropicApiKeySecretArn, ""]]
+
+Globals:
+  Function:
+    Runtime: python3.12
+    Timeout: 30
+    MemorySize: 512
+    Architectures: [arm64]
+
+Resources:
+  DriveMemoryRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: { Service: lambda.amazonaws.com }
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - !If
+          - UseLLM
+          - PolicyName: ReadAnthropicSecret
+            PolicyDocument:
+              Version: "2012-10-17"
+              Statement:
+                - Effect: Allow
+                  Action: secretsmanager:GetSecretValue
+                  Resource: !Ref AnthropicApiKeySecretArn
+          - !Ref AWS::NoValue
+
+  DriveMemoryFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ../../src  # contains requirements.txt with the Lambda runtime dependencies
+      Handler: drivememory.api.lambda_handler.handler
+      Role: !GetAtt DriveMemoryRole.Arn
+      Environment:
+        Variables:
+          # Lambda storage is ephemeral; swap MemoryStore for DynamoDB/RDS for durable memory.
+          DRIVEMEMORY_DB: /tmp/drivememory.db
+      Events:
+        Api:
+          Type: HttpApi
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+
+Outputs:
+  ApiUrl:
+    Description: Base URL of the DriveMemory API
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com"
