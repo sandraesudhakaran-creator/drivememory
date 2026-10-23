@@ -1,4 +1,4 @@
-﻿# DriveMemory
+﻿# DriveMemory 🚗🧠
 
 **A context-aware memory system for an in-car AI assistant.**
 DriveMemory turns raw vehicle signals into explainable, privacy-respecting knowledge about the driver and uses it to personalise the cabin, the conversation and **autonomous-driving behaviour**, through a team of agents talking over **A2A** and tools exposed over **MCP**.
